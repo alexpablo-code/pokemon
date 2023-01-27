@@ -10,6 +10,7 @@ function App() {
   const [nextPageUrl, setNextPageUrl] = useState()
   const [prevPageUrl, setPrevPageUrl] = useState()
   const [loading, setLoading] = useState(true)
+  const [pokeFullInfo, setPokeFullInfo] = useState([])
 
   useEffect(() => {
     setLoading(true)
@@ -19,9 +20,16 @@ function App() {
     })
     .then(response => {
       setLoading(false)
+      console.log("This is the Full Response", response)
       setNextPageUrl(response.data.next)
       setPrevPageUrl(response.data.previous)
       setPokemonList(response.data.results.map(p => p.name))
+      setPokeFullInfo(response.data.results.map(p => {
+        axios.get(p.url)
+        .then(resp => {
+          console.log("This is full Poke link info", resp)
+        })
+      }))
     })
 
     return () => cancel()
