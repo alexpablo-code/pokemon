@@ -1,16 +1,20 @@
 
 
 
-const PokemonList = ({pokemon}) => {
+const PokemonList = ({pokemonList, setPokemonList}) => {
+
+    
     return (
         <div>
             {
-                pokemon.map((p) => (
+                pokemonList .map((p) => (
                     <div>
-                        <p>{p}</p>
+                        <p key={p}>{p}</p>
+                        <p></p>
                     </div>
                 ))
             }
+            
         </div>
     );
 }
