@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Roboto', sans-serif;
+    ;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+.nav{
+    width: 90%;
+}
+
+.nav img {
+    height: 250px;
+    margin-left:20px;
+}
+
+
+body {
+    background-color: #8f0c02;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-content {
+    width: 50%;
+}
+
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-gap: 2rem;
+}
+
+.right-content {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.right-content img {
+    margin: 1.5rem;
+    height: 180px;
+}
+.info-box{
+    background-color: rgb(20, 20, 20);
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    width: 30%;
+    position: fixed;
+    top: 250px;
+    right: 250px;
+}
+
+.right-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.abilities {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.abilities .group{
+    background-color: #dfd112;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.base-stat{
+    margin-top: 1rem;
+    
+}
+
+.card {
+    width: 300px;
+    background-color: rgb(192, 211, 211);
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.btn-group{
+    display: flex;
+
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    background-color: #fae106;
+    border-radius: 8px;
+}
+
